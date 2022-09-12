@@ -1,0 +1,138 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter';
+}
+
+:root {
+  --primary-color: #0D0D0D;
+  --secondary-color: #efefef;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color) 30%,
+    var(--secondary-color) 25%
+  );
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+}
+
+nav ul li {
+  padding: 30px;
+  font-weight: bold;
+}
+
+li::after {
+  content: url(./img/seta-menu.png);
+  padding-left: 10px;
+}
+
+li:last-child::after {
+  content: "";
+}
+
+.logo-nike {
+  background-color: var(--primary-color);
+  margin: 20px;
+}
+
+.usuario {
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+main {
+  height: 54vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10vh;
+  margin-right: 30vh;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nome-tenis {
+  letter-spacing: 0.34em;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.34em;
+}
+
+.descricao {
+  color: #585858;
+  font-size: 1.3rem;
+}
+
+button {
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 270px;
+  height: 65px;
+  letter-spacing: 0.34em;
+}
+
+.tenis-nike {
+  background: linear-gradient(179.96deg, #9c0610 0.04%, #cf5c55 99.96%);
+  box-shadow: 73px 8px 38px -10px rgba(189, 63, 61, 0.42);
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 300px;
+  top: 190px;
+  filter: drop-shadow(0px 22.5388px 45.0775px rgba(0, 0, 0, 0.3));
+  border-radius: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+
+footer div {
+    display: flex;
+    width: 170px;
+    justify-content: space-around;
+    color: #FFFFFF;
+    margin: 0px 0px 20px 20px;
+}
+
+.icone-menu {
+  width: 40px;
+  margin: 0px 20px 20px 0px;
+}
+
+
+@import url('https://rsms.me/inter/inter.css');
